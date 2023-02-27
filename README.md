@@ -12,7 +12,7 @@ We have a class Menubar a class MenubarItem and a class MenuItem.
 On the Userform we have a Frame-control on the frame control we have some Image and Label-controls working as Menubaritems.
 The class Menubar holds and manages the Frame-control and all MenubarItem-objects and paints it due to the users mouse-actions.
 The class MenubarItem holds and manages the Frame-control for the menuitems and all the Menuitem-objects and paints it due to the users mouse-actions.
-The class MenuItem holds and manages an Image-control and a Label-Control and draws it due to the users mouse actions.
-You maybe also want to have a look at the menubar repo: [XL_Toolbar](https://github.com/OlimilO1402/XL_Toolbar)  
+The class MenuItem holds and manages an Image-control and a Label-Control and draws it due to the users mouse actions.  
+You maybe also want to have a look at the toolbar repo: [XL_Toolbar](https://github.com/OlimilO1402/XL_Toolbar)  
 
 ![XL_Menubar Image](Resources/XLMenubar.png "XL_Menubar Image")
