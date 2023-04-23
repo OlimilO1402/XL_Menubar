@@ -13,11 +13,11 @@ Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = False
 Option Explicit
 Private m_Text As String
-Private WithEvents mImage As MSForms.Image
+Private WithEvents mImage As Image 'MSForms.Image
 Attribute mImage.VB_VarHelpID = -1
-Private WithEvents mLabel As MSForms.Label
+Private WithEvents mLabel As Label 'MSForms.Label
 Attribute mLabel.VB_VarHelpID = -1
-Private mMenuItemFrame    As MSForms.Frame
+Private mMenuItemFrame    As PictureBox 'MSForms.Frame
 Private m_Menubar         As Menubar
 Private Const MouseOverBorderColor As Long = SystemColorConstants.vbHighlight ' = &HD77800 ' = RGB(  0, 120, 215)
 Private Const MouseOverBackColor   As Long = &HF3D7B3 ' = RGB(179, 215, 243)
@@ -33,7 +33,8 @@ Private Sub Class_Initialize()
     Set m_SubItems = New Collection
 End Sub
 
-Friend Sub New_(ByVal aText As String, aImage As MSForms.Image, aLabel As MSForms.Label, aMenuItemFrame As MSForms.Frame)
+'Friend Sub New_(ByVal aText As String, aImage As MSForms.Image, aLabel As MSForms.Label, aMenuItemFrame As PictureBoxMSForms.Frame)
+Friend Sub New_(ByVal aText As String, aImage As Image, aLabel As Label, aMenuItemFrame As PictureBox)
     m_Text = aText: Set mImage = aImage: Set mLabel = aLabel: Set mMenuItemFrame = aMenuItemFrame
     aMenuItemFrame.Visible = False
     mLabel.WordWrap = False

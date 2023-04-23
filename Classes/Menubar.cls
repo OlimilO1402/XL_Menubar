@@ -12,8 +12,8 @@ Attribute VB_Creatable = True
 Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = False
 Option Explicit
-Private mOwner As MSForms.UserForm
-Private WithEvents mPanel As MSForms.Frame
+Private mOwner As Form 'MSForms.UserForm
+Private WithEvents mPanel As PictureBox 'MSForms.Frame
 Attribute mPanel.VB_VarHelpID = -1
 Private m_IsMenuOpen As Boolean
 Private m_Items As Collection
@@ -25,7 +25,8 @@ Private Sub Class_Initialize()
     m_LastLeft = 6
 End Sub
 
-Friend Sub New_(Owner As UserForm, aFrame As MSForms.Frame)
+'Friend Sub New_(Owner As UserForm, aFrame As PictureBox) 'MSForms.Frame)
+Friend Sub New_(Owner As Form, aFrame As PictureBox)
     Set mOwner = Owner: Set mPanel = aFrame
     mPanel.Left = -1
 End Sub
